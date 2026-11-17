@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>プライバシーポリシー｜ジム記録</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { font-family: -apple-system, "Hiragino Kaku Gothic ProN", sans-serif; line-height: 1.8;
+         max-width: 720px; margin: 0 auto; padding: 32px 20px 80px; color: #1a1a1a; }
+  h1 { font-size: 1.5rem; } h2 { font-size: 1.15rem; margin-top: 2rem; border-top: 1px solid #0001; padding-top: 1.2rem; }
+  .updated { color: #888; font-size: .9rem; }
+  ul { padding-left: 1.2em; } li { margin: .3em 0; }
+  @media (prefers-color-scheme: dark) { body { color: #eaeaea; background: #111; } .updated { color: #999; } h2 { border-color: #fff2; } }
+</style>
+</head>
+<body>
+<h1>プライバシーポリシー（ジム記録）</h1>
+<p class="updated">最終更新: 2026-11-17</p>
+<p>「ジム記録」（以下、本アプリ）のプライバシーポリシーです。</p>
+
+<h2>収集・保存するデータ</h2>
+<ul>
+  <li>入力データ（筋トレ・食事・体重/ウエスト/体脂肪・目標）は、原則として<strong>お使いの端末内（SwiftData）にのみ</strong>保存されます。</li>
+  <li>HealthKit を連携した場合、<strong>体重・体脂肪率を読み取り</strong>ます（本アプリから HealthKit への書き込みは行いません）。読み取った値は端末内の記録・レポートにのみ使用します。</li>
+  <li><strong>写真</strong>：コーチのアイコンに使う画像を写真から選べます。選んだ画像は<strong>端末内でのみ</strong>保存・表示し、外部には送信しません。</li>
+  <li>本アプリは広告・解析SDKを使用せず、トラッキングを行いません。</li>
+</ul>
+
+<h2>AI機能（任意・事前同意制）</h2>
+<ul>
+  <li>AI機能（<strong>食事の推定</strong>・<strong>今日の気づき（日次アドバイス）</strong>・<strong>相談チャット</strong>）は、初回利用時に表示する説明に同意した場合のみ動作します。同意は設定からいつでも取り消せます。</li>
+  <li>同意後、処理のために次の情報を運営者のサーバ（AWS 等）経由で生成AI（Amazon Bedrock）へ送信します。
+    <ul>
+      <li>食事の推定：入力した食事の品名</li>
+      <li>今日の気づき（日次アドバイス）：計算済みの集計値（その日/前日までの摂取・たんぱく質・収支・体重の傾向・トレーニング量など）</li>
+      <li>相談チャット：あなたの入力文、計算済みの集計値（体重・収支・たんぱく質など）、体組成の傾向、トレーニングメニュー・直近の実績、方針メモ</li>
+    </ul>
+  </li>
+  <li>回数制限のための<strong>匿名のインストール識別子</strong>（再インストールでリセットされる乱数。氏名や端末固有IDではありません）をリクエストに付与します。</li>
+  <li><strong>氏名・HealthKitの生データ・連絡先・端末固有の識別子は送信しません</strong>（送るのは計算済みの集計値と文字列のみ）。写真はAIに送信しません。</li>
+  <li>同意しない／AIを無効にしている場合、データは一切外部に送信されません（記録・グラフ・ルールベースの目安は引き続き利用できます）。</li>
+</ul>
+
+<h2>データの共有</h2>
+<ul>
+  <li>第三者への販売・共有は行いません。AI利用時の送信先は、運営者が管理するサーバおよびそのクラウド基盤（AWS/Bedrock）に限られます。</li>
+</ul>
+
+<h2>データの書き出し・削除</h2>
+<ul>
+  <li>設定からデータをJSONで書き出せます。</li>
+  <li>アプリを削除すると端末内のデータは削除されます。</li>
+</ul>
+
+<h2>お問い合わせ</h2>
+<p>連絡先: <a href="mailto:kumagaitakuya0423@gmail.com">kumagaitakuya0423@gmail.com</a></p>
+</body>
+</html>
